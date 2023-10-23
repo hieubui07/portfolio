@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+.animation {
+    color: beige;
+    font-family:"press start 2p","san-serif","consolas","courier","serif";
+    font-size: 40px;
+    margin-top: 60px;
+}
+.intro {
+    color: beige;
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+    font-size: 28px;
+    font-weight:lighter;
+}
+.socials-link {
+    color: beige;
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+    font-size: 22px;
+    font-weight: bold;
+}
+.about-me {
+    color: beige;
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+    font-size: 22px;
+    font-weight: bold;
+}
+p{
+    color: beige;
+    font-family: "Fira Sans Condensed", "sans-serif";
+}
+button{
+    background-color: black;
+    color: beige;
+    border-radius: 10px;
+    border-color: beige; 
+    padding: 5px;
+    font-size: 15px;
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+}
