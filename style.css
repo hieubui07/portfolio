@@ -55,6 +55,17 @@ nav ul li a:hover::after{
     font-family: "chakra petch","san-serif","consolas","courier","serif";
     font-size: 22px;
     font-weight: bold;
+    text-align: center;
+}
+
+.socials{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.socials a{
+    position: relative;
 }
 
 /*---------------------about-----------------*/
