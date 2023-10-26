@@ -17,9 +17,26 @@ nav ul li{
 nav ul li a{
     color: beige;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 18px;
+    position: relative;
 }
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: beige;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
 .intro {
     color: beige;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
