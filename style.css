@@ -1,13 +1,7 @@
 body{
     background-color: black;
 }
-.animation {
-    color: beige;
-    font-family:"press start 2p","san-serif","consolas","courier","serif";
-    font-size: 40px;
-    margin-top: 60px;
-}
-
+/*---------------nav bar-------------------*/
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -37,18 +31,33 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+/*-------------animation-----------------*/
+.animation {
+    color: beige;
+    text-align: center;
+    font-family:"press start 2p","san-serif","consolas","courier","serif";
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+/*-----------------intro-------------------*/
 .intro {
     color: beige;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
     font-size: 28px;
     font-weight:lighter;
+    text-align: center;
 }
+
+/*------------socials----------------*/
 .socials-link {
     color: beige;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
     font-size: 22px;
     font-weight: bold;
 }
+
+/*---------------------about-----------------*/
 .about-me {
     color: beige;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
@@ -59,6 +68,8 @@ p{
     color: beige;
     font-family: "Fira Sans Condensed", "sans-serif";
 }
+
+/*----------------resume-button-------------------*/
 button{
     background-color: black;
     color: beige;
@@ -68,3 +79,4 @@ button{
     font-size: 15px;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
 }
+
