@@ -6,112 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>This is my website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="header">
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
+    <nav id="header">
+        <div class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
     </nav>
-</div>
-<!---------Animation--------->
-<h1 class="animation">Hello world!</h1>
-<div class="header-text">
-    <h1>My name is Hieu Bui!<br>I'm a computer science and mathematics<br>student at the University of Houston!</h1>
-</div>
-    <br>
-    <br>
-<!----------About me---------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="about" onclick="toggleMenu()">About</a></li>
+            <li><a href="experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </nav>
+    <!---------Animation--------->
+    <h1 class="animation">Hello world!</h1>
+    
+    <!----------About me---------->
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/images/pic1.png" alt="Hieu Bui's profile pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Hieu Bui</h1>
+            <p class="section_text_p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Hieu_Bui_Resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate dolor dolorum nulla sunt veritatis quo iste, facilis, suscipit eaque impedit, quibusdam labore asperiores eligendi voluptatum rerum? Explicabo voluptates molestiae commodi.</p>
-                
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>Web Development</li>
-                        <li>SQL</li>
-                        <li>Git/Github</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2023 - Current</span><br>IT Customer Support at UH</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2022 - Current</span><br>Computer Science at University of Houston</li>
-                    </ul>
-                </div>
+            <div id="socials-container">
+                <img src="./assets/images/linkedinlight.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/hbui0107/'">
+                <img src="./assets/images/githublight.png" alt="My GitHub profile" 
+                class="icon" onclick="location.href='https://github.com/hieubui07'">
+                <img src="./assets/images/iglight.png" alt="My Instagram profile"
+                class="icon" onclick="location.href='https://www.instagram.com/hieu.bui7/'">
             </div>
         </div>
-    </div>
-</div>
-    <br>
-    <br>
-<!--------socials----------->
-        <h3 class="socials-link">Here are my socials</h3>
-    <div class="socials">
-        <nav class="socials-icon">
-        <ul>
-        <section>
-            <a href="https://www.linkedin.com/in/hbui0107/" target="_blank">
-            <img src="/images/linkedinlight.png" height="50" weight="50">
-            </a>
+    </section>
         
-            <a href="https://www.instagram.com/hieu.bui7/" target="_blank">
-            <img src="/images/iglight.png" height="50" weight="50">
-            </a>
-       
-            <a href="https://github.com/hieubui07" target="_blank">
-            <img src="/images/githublight.png" height="50" weight="50">
-            </a>
-        </section>
-        </ul>
-    </div>
-    <br>
-    <br>
-    <div>
-        <section>
-            <button onclick="window.open('http://google.com','_blank')">>Resume</button>
-        </section>
-    </div>
-   
-<script>
+    <!--------socials----------->
+            <h3 class="socials-link">Here are my socials</h3>
+        <div class="socials">
+            <nav class="socials-icon">
+            <ul>
+            <section>
+                <a href="https://www.linkedin.com/in/hbui0107/" target="_blank">
+                <img src="/images/linkedinlight.png" height="50" weight="50">
+                </a>
+            
+                <a href="https://www.instagram.com/hieu.bui7/" target="_blank">
+                <img src="/images/iglight.png" height="50" weight="50">
+                </a>
+        
+                <a href="https://github.com/hieubui07" target="_blank">
+                <img src="/images/githublight.png" height="50" weight="50">
+                </a>
+            </section>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div>
+            <section>
+                <button onclick="window.open('http://google.com','_blank')"></button>>Resume</button>
+            </section>
+        </div>
     
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tablink of tabcontents){
-            tablecontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
 
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
