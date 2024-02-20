@@ -35,10 +35,8 @@
             <li><a href="contact" onclick="toggleMenu()">Contact</a></li>
         </div>
     </nav>
-    <!---------Animation--------->
-    <h1 class="animation">Hello world!</h1>
-    
-    <!----------About me---------->
+  
+    <!----------profile---------->
     <section id="profile">
         <div class="section_pic-container">
             <img src="./assets/images/pic1.png" alt="Hieu Bui's profile pic">
@@ -48,7 +46,7 @@
             <h1 class="title">Hieu Bui</h1>
             <p class="section_text_p2">Software Engineer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Hieu_Bui_Resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/Hieu_Bui_Resume.pdf')">Resume</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
@@ -61,35 +59,57 @@
             </div>
         </div>
     </section>
-        
-    <!--------socials----------->
-            <h3 class="socials-link">Here are my socials</h3>
-        <div class="socials">
-            <nav class="socials-icon">
-            <ul>
-            <section>
-                <a href="https://www.linkedin.com/in/hbui0107/" target="_blank">
-                <img src="/images/linkedinlight.png" height="50" weight="50">
-                </a>
-            
-                <a href="https://www.instagram.com/hieu.bui7/" target="_blank">
-                <img src="/images/iglight.png" height="50" weight="50">
-                </a>
-        
-                <a href="https://github.com/hieubui07" target="_blank">
-                <img src="/images/githublight.png" height="50" weight="50">
-                </a>
-            </section>
-            </ul>
+
+    <!--        about me       -->
+    <section id="about">
+        <p class="section_text_p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                src="./assets/images/about-pic.png"
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/images/experience.png" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/images/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Senior <br />University of Houston</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita optio, ab perspiciatis cumque laudantium corporis accusantium voluptate tempora quod facilis! Magnam dolores, cupiditate modi quidem minima iste, praesentium at rem facilis unde excepturi assumenda laboriosam odio consequatur tempore, numquam adipisci reiciendis veritatis tenetur quas aliquid cum. Fugiat, repudiandae. Enim, itaque.
+                    </p>
+                </div>
+            </div>
         </div>
-        <br>
-        <br>
-        <div>
-            <section>
-                <button onclick="window.open('http://google.com','_blank')"></button>>Resume</button>
-            </section>
-        </div>
+        <img 
+        src="./assets/images/arrow.png" 
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+        />
+    </section>
     
+
+
         <script>
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");

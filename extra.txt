@@ -1,0 +1,172 @@
+<div class="header-text">
+    <h1>My name is Hieu Bui!<br>I'm a computer science and mathematics<br>student at the University of Houston!</h1>
+</div>
+    <br>
+    <br>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate dolor dolorum nulla sunt veritatis quo iste, facilis, suscipit eaque impedit, quibusdam labore asperiores eligendi voluptatum rerum? Explicabo voluptates molestiae commodi.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Web Development</li>
+                        <li>SQL</li>
+                        <li>Git/Github</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>IT Customer Support at UH</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Computer Science at University of Houston</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+#about{
+    
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+    font-size: 22px;
+    font-weight: bold;
+    padding: 80px 0;
+    text-align: center;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 30%;
+}
+
+.about-col-2{
+    flex-direction: row-reverse;
+    text-align: center;
+}
+.about-col-2 p{
+    text-align: center;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: beige;
+}
+.tab-links{
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 20px;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: beige;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: orange;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+.header-text h1{
+    
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+    font-size: 28px;
+    font-weight:lighter;
+    text-align: center;
+}
+
+/*------------socials----------------*/
+.socials-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.socials-link {
+    color: beige;
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.socials{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.socials a{
+    position: relative;
+}
+
+.socials img{
+    margin: 10px 20px;
+    margin-left: 100px;
+}
+
+
+
+/*----------------resume-button-------------------*/
+button{
+    background-color: black;
+    color: beige;
+    border-radius: 10px;
+    border-color: beige; 
+    padding: 5px;
+    font-size: 15px;
+    font-family: "chakra petch","san-serif","consolas","courier","serif";
+}
+
+  <!---------Animation--------->
+  <h1 class="animation">Hello world!</h1>
+    
+  /*-------------animation-----------------*/
+.animation {
+    color: beige;
+    text-align: center;
+    font-family:"press start 2p","san-serif","consolas","courier","serif";
+    font-size: 40px;
+    margin-top: 60px;
+}
