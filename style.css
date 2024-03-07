@@ -113,14 +113,7 @@ nav ul li a:hover::after{
 
 /*-----------------intro-------------------*/
 
-/* about me */
-section{
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-}
+
 
 .section-container{
     display: flex;
@@ -144,6 +137,10 @@ section{
 .section_text{
     align-self: center;
     text-align: center;
+}
+
+.section_text p{
+    font-weight: 600;
 }
 
 .section_text_p1{
@@ -226,6 +223,14 @@ section{
     position: relative;
 }
 
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
 .about_text_p1{
     text-align: center;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
@@ -292,6 +297,7 @@ section{
 
 .experience_text_p1{
     text-align: center;
+    justify-content: center;
     font-family: "chakra petch","san-serif","consolas","courier","serif";
 }
 
@@ -300,10 +306,13 @@ section{
     text-align: center;
 }
 
-.tab-titles{
+.tab-title{
     display: flex;
     margin: 20px 0 40px;
     text-align: center;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
 }
 
 .tab-links{
